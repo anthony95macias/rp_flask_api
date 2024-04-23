@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "rp-flask-api"
+version = "0.1.0"
+description = ""
+authors = ["Anthony Macias <Anthony40macias@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+flask = "^3.0.3"
+connexion = {extras = ["swagger-ui"], version = "^3.0.6"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+app = "app_module:main_function"
