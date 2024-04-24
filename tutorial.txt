@@ -1,1 +1,10 @@
 https://realpython.com/flask-connexion-rest-api/
+
+
+connexion = {extras = ["uvicorn"], version = "^3.0.6"}
+connexion = {extras = ["flask"], version = "^3.0.6"}
+connexion = {extras = ["flask", "uvicorn","swagger-ui"], version = "^3.0.6"}
+connexion[swagger-ui]==2.14.1"
+
+
+uvicorn app:app --reload --port 8000
